@@ -1,6 +1,5 @@
 #include <LiquidCrystal_I2C.h>
 
-// Blynk IOT Smart Plant Monitoring System
 
 /* Connections
 Relay. D3
@@ -11,9 +10,9 @@ SDA.   D2
 SCL.   D1
 Temp.  D4
 */
-#define BLYNK_TEMPLATE_ID "TMPL3pRI70iPK"
-#define BLYNK_TEMPLATE_NAME "smart plant"
-#define BLYNK_AUTH_TOKEN "Aprsjg_YT1rXL_bZ1qosaK3ORwFBSWJ6"
+#define BLYNK_TEMPLATE_ID "keep_you's"
+#define BLYNK_TEMPLATE_NAME "keep_you's"
+#define BLYNK_AUTH_TOKEN "keep_you's"
 // Include the library files
 #include <LiquidCrystal_I2C.h>
 #define BLYNK_PRINT Serial
@@ -24,11 +23,11 @@ Temp.  D4
 // Initialize the LCD display
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-char auth[] = "Aprsjg_YT1rXL_bZ1qosaK3ORwFBSWJ6";  // Enter your Blynk Auth token
-char ssid[] = "Smart Plant";  // Enter your WIFI SSID
-char pass[] = "srujan@1234";  // Enter your WIFI Password
+char auth[] = "Enter your Blynk Auth token";  
+char ssid[] = "Enter your WIFI SSID";  
+char pass[] = "Enter your WIFI Password";  
 
-DHT dht(D4, DHT11);  // (DHT sensor pin, sensor type)  D4 DHT11 Temperature Sensor
+DHT dht(D4, DHT11); 
 BlynkTimer timer;
 
 // Define component pins
